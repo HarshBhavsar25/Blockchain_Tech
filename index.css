@@ -2,14 +2,14 @@
    margin :0;
   padding :0;
      box-sizing: border-box;
-     font-family: IBM Plex Sans, Helvetica Neue, Arial, sans-serif;
+     font-family: 'Times New Roman', Times, serif, Helvetica Neue, Arial, sans-serif;
      font-weight: 400;
     
 }
 
 header{
     margin: 0;
-   display: flex;
+    display: flex;
     width:100%;
     height :55px;
     background-color: #00132c;
@@ -29,7 +29,6 @@ header{
    justify-content: space-evenly;
     margin: 10px 5px;
 }
-
 
 .search_bar{
     display: flex;
@@ -53,6 +52,11 @@ header{
     font-weight: 600;
     display: none;
 }
+
+p span{
+    font-weight: 800;
+}
+
 @media screen and (max-width : 1050px) {
     header{
         display: flex;
@@ -79,7 +83,7 @@ header{
         position: absolute;
         left : 8vh;
         width :1vw;
-       
+       flex-grow: 1;
     }
     .bch_logo{
         display: none;
@@ -98,12 +102,24 @@ header{
     .action_bar a span {
        font-size: 6vw;
     }
+
+    
     .action_bar a .action_name{
         display: none;
     } 
     .search_input{
         width:30vw;
     }
+    #elements .tech{
+        flex-direction: column;
+    }
+    #elements .ele_img{
+    align-self: center;
+    margin-bottom :5%;
+    width : 30vmin;
+    height: 30vmin;
+    }
+
 }
 
 .dspaces{
@@ -145,8 +161,17 @@ header{
 main{
     background-color: #ebf5ff;
 }
-
+.mainqs{
+    z-index: 1;
+    font-size: 10vmin;
+    position: absolute;
+    top :15%;
+    left :5%;
+    font-family: cursive;
+    color: aqua;
+}
 main h1{
+  
     text-align: center;
     font-weight: 500;
     margin-bottom: 3%;
@@ -164,3 +189,16 @@ main h3{
     font-weight: 400;
     margin-bottom: 3%;
 }
+
+
+#elements{
+    margin :10vmin 3vmin;
+    display: flex;
+    flex-direction: column;
+    
+}
+ .tech{
+    display: flex;
+    margin : 10vmin 0;
+}
+
